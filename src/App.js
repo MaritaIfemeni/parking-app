@@ -11,6 +11,7 @@ function App() {
     <div>
       <Component irma={testiteksti}/>
       <CiParking1 className="App-logo" />
+      <Component irma={testiteksti}/>
       <div className="App">
         <header className="App-header">
           {/*<img src={logo} className="App-logo" alt="logo" />'*/}
