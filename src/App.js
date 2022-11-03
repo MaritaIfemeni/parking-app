@@ -1,23 +1,18 @@
-//import logo from './logo.svg';
-import { CiParking1 } from 'react-icons/ci';
 import './App.css';
 import Component from './Component';
 import Testiclass from './Testiclass';
 
 function App() {
-  const testiteksti = "test";
 
   return (
     <div>
-      <Component irma={testiteksti}/>
-      <CiParking1 className="App-logo" />
-      <Component irma={testiteksti}/>
       <div className="App">
         <header className="App-header">
-          {/*<img src={logo} className="App-logo" alt="logo" />'*/}
-      
-          <Testiclass />
-          <p>
+          <Component />
+        </header>
+        
+        <Testiclass />
+        <p>
             Edit <code>src/App.js</code> and save to reload.
           </p>
           <a
@@ -28,9 +23,8 @@ function App() {
           >
             Learn React
           </a>
-        </header>
       </div>
-      <Component irma="testi2"/>
+
     </div>
   );
 }
