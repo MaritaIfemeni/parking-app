@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
+import { CiParking1 } from 'react-icons/ci';
 import './App.css';
 import Component from './Component';
 import Testiclass from './Testiclass';
@@ -9,9 +10,11 @@ function App() {
   return (
     <div>
       <Component irma={testiteksti}/>
+      <CiParking1 className="App-logo" />
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          {/*<img src={logo} className="App-logo" alt="logo" />'*/}
+      
           <Testiclass />
           <p>
             Edit <code>src/App.js</code> and save to reload.
