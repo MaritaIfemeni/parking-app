@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   background-color: #faf1eb;
+
 }
 
 .App-logo {
@@ -31,6 +32,13 @@
 
 .App-link {
   color: #61dafb;
+}
+
+#test {
+  text-align: left;
+}
+.App-body {
+  background-color: royalblue;
 }
 
 @keyframes App-logo-spin {

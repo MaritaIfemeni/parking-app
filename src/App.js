@@ -1,5 +1,6 @@
 import './App.css';
 import Component from './Component';
+import Body from './Body';
 import Testiclass from './Testiclass';
 
 function App() {
@@ -10,19 +11,12 @@ function App() {
         <header className="App-header">
           <Component />
         </header>
-        
+        <section className="App-body">
+        <Body />
+        </section>
         <Testiclass />
-        <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+        
+
       </div>
 
     </div>
