@@ -1,25 +1,20 @@
-import './App.css';
-import Component from './Component';
-import Body from './Body';
-import Testiclass from './Testiclass';
-
+import "./App.css";
+import Component from "./Component";
+import Body from "./Body";
+import Testiclass from "./Testiclass";
 
 function App() {
-
   return (
-    <div>
-      <div className="App">
+    <div className="App">
+      <div >
         <header className="App-header">
-          <Component />
+          <Component/>
         </header>
         <section className="App-body">
-        <Body />
+          <Body />
         </section>
         <Testiclass />
-        
-
       </div>
-
     </div>
   );
 }

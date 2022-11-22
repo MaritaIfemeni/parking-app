@@ -1,14 +1,18 @@
-.App {
-  text-align: center;
-  background-color: #faf1eb;
-
+body {
+  height: 50vh;
 }
 
+.App {
+  text-align: center;
+}
+
+
 .App-logo {
-  height: 40vmin;
+  height: 35vmin;
   width: 20vmin;
   color: aqua;
   pointer-events: none;
+  text-align: left;
   animation: App-logo-spin infinite 20s linear;
 }
 
@@ -38,7 +42,23 @@
   text-align: left;
 }
 .App-body {
-  background-color: royalblue;
+  height: 500px;
+  margin-top: 4%;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-style: solid;
+  border-radius: 20px;
+  border-width: 10px;
+  border-color: #282c34;
+
+}
+
+.weather {
+
+}
+
+th {
+  width: 250px;
 }
 
 @keyframes App-logo-spin {

@@ -1,10 +1,12 @@
-import { CiParking1 } from "react-icons/ci";
+import { FaParking } from "react-icons/fa";
 import React, { useEffect, useState } from "react";
+import Weather from "./Weather"
 
-const Component = (props) => {
+const Component = ({props}) => {
   const [lat, setLat] = useState([60]);
   const [long, setLong] = useState([24]);
   const [data, setData] = useState([]);
+
 
   useEffect(() => {
     const fetchData = async () => {
@@ -12,24 +14,32 @@ const Component = (props) => {
         setLat(position.coords.latitude);
         setLong(position.coords.longitude);
       });
-      console.log(lat, long);
-      console.log (process.env.REACT_APP_API_URL)
-      const response = await fetch(
+
+      await fetch(
         `${process.env.REACT_APP_API_URL}/weather/?lat=${lat}&lon=${long}&units=metric&APPID=${process.env.REACT_APP_API_KEY}`
-      );
-      const data = await response.json();
-      console.log(data);
+      )
+        .then((res) => res.json())
+        .then((result) => {
+          setData(result);
+          console.log(result);
+        });
     };
     fetchData();
   }, [lat, long]);
 
+
   return (
     <div>
+      {(typeof data.main != 'undefined') ? (
+        <Weather weatherData={data}/>
+      ): (
+        <div></div>
+      )}
       <table>
         <thead>
           <tr>
             <th>
-              <CiParking1 className="App-logo" />
+              <FaParking className="App-logo" />
             </th>
             <th>Linkkaa Parkki</th>
           </tr>
