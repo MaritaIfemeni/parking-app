@@ -55,6 +55,7 @@ body {
 .weather {
   padding: 5px;
   font-size: 16px;
+  color: rgba(0, 255, 255, 0.613);
 }
 
 th {
@@ -65,7 +66,7 @@ th {
 @media screen and (max-width: 600px) {
   th {
     width: 150px;
-    font-size: 12px;
+    font-size: 16px;
   }.weather {
     padding: 2px;
     font-size: 10px;
