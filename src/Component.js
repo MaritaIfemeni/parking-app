@@ -1,12 +1,11 @@
 import { FaParking } from "react-icons/fa";
 import React, { useEffect, useState } from "react";
-import Weather from "./Weather"
+import Weather from "./Weather";
 
-const Component = ({props}) => {
+const Component = ({ props }) => {
   const [lat, setLat] = useState([60]);
   const [long, setLong] = useState([24]);
   const [data, setData] = useState([]);
-
 
   useEffect(() => {
     const fetchData = async () => {
@@ -27,21 +26,22 @@ const Component = ({props}) => {
     fetchData();
   }, [lat, long]);
 
-
   return (
     <div>
-      {(typeof data.main != 'undefined') ? (
-        <Weather weatherData={data}/>
-      ): (
-        <div></div>
-      )}
       <table>
         <thead>
           <tr>
             <th>
               <FaParking className="App-logo" />
             </th>
-            <th>Linkkaa Parkki</th>
+            <th>
+              Linkkaa Parkki
+              {typeof data.main != "undefined" ? (
+                <Weather weatherData={data} />
+              ) : (
+                <div></div>
+              )}
+            </th>
           </tr>
         </thead>
       </table>

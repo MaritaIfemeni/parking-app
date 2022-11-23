@@ -6,7 +6,6 @@ body {
   text-align: center;
 }
 
-
 .App-logo {
   height: 35vmin;
   width: 20vmin;
@@ -54,11 +53,24 @@ body {
 }
 
 .weather {
-
+  padding: 5px;
+  font-size: 16px;
 }
 
 th {
   width: 250px;
+}
+
+/* On screens that are 600px or less */
+@media screen and (max-width: 600px) {
+  th {
+    width: 150px;
+    font-size: 12px;
+  }.weather {
+    padding: 2px;
+    font-size: 10px;
+  }
+
 }
 
 @keyframes App-logo-spin {

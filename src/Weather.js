@@ -3,9 +3,9 @@ import "./App.css";
 
 const CardExampleCard = ({ weatherData }) => (
   <div className="weather">
-    Sijainti: {weatherData.name}
-    Lämpötila: {weatherData.main.temp}
-    Description: {weatherData.weather[0].description}
+    <p>Sijainti: {weatherData.name}</p>
+    <p>Lämpötila: {weatherData.main.temp}</p>
+    <p>Kuvaus: {weatherData.weather[0].description}</p>
   </div>
 );
 
