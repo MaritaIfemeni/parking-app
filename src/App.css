@@ -59,7 +59,14 @@ body {
 }
 
 th {
-  width: 250px;
+  width: 400px;
+}
+
+/* On screens that are 992px or less */
+@media screen and (max-width: 992px) {
+  th {
+    width: 250px;
+  }
 }
 
 /* On screens that are 600px or less */
