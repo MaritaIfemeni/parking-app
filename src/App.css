@@ -40,6 +40,7 @@ body {
 #test {
   text-align: left;
 }
+
 .App-body {
   height: 500px;
   margin-top: 4%;
@@ -49,7 +50,6 @@ body {
   border-radius: 20px;
   border-width: 10px;
   border-color: #282c34;
-
 }
 
 .weather {
@@ -74,11 +74,11 @@ th {
   th {
     width: 150px;
     font-size: 16px;
-  }.weather {
+  }
+  .weather {
     padding: 2px;
     font-size: 10px;
   }
-
 }
 
 @keyframes App-logo-spin {
