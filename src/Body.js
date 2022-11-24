@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 
 const Body = (props) => {
-  const [freePark, setFreePark] = useState("Muuttuuko?");
-  const [freePark2, setFreePark2] = useState("Muutt?");
+  const [freePark, setFreePark] = useState("");
+  const [freePark2, setFreePark2] = useState("");
   const [oldState, setOldState] = useState(null);
 
   const listOfFreeSpots = [
@@ -37,11 +37,11 @@ const Body = (props) => {
 
   return (
     <div>
-      <p> Vapaita parkkipaikkoja seuraavissä kohteissa: </p>
-      {freePark}
-      {freePark2}
+      <h3> Vapaita parkkipaikkoja löytydettävissä: </h3>
+      <p className="spots">{freePark}</p>
+      <p className="spots">{freePark2}</p>
       <button className="button" onClick={handleClick}>
-        Paina
+        Hae vapaita parkkialueita
       </button>
     </div>
   );

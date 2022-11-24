@@ -1,5 +1,7 @@
 body {
   height: 50vh;
+  background-color: aliceblue;
+  border-radius: 5px;
 }
 
 .App {
@@ -15,12 +17,20 @@ body {
   animation: App-logo-spin infinite 20s linear;
 }
 
-/*@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}*/
+.button {
+  margin-top: 70px;
+  padding: 5px;
+  width: 170px;
+  border-color: #282c34;
+  border-width: 4px;
+  border-radius: 5px;
+  background-color: rgba(0, 255, 255, 0.613);
+}
 
+.spots {
+  color: #282c34;
+  font-style: italic;
+}
 .App-header {
   background-color: #282c34;
   max-height: 40vh;
@@ -31,25 +41,22 @@ body {
   justify-content: left;
   font-size: calc(10px + 2vmin);
   color: aqua;
+  border-radius: 5px;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-#test {
-  text-align: left;
-}
-
 .App-body {
-  height: 500px;
-  margin-top: 4%;
-  margin-left: 10%;
-  margin-right: 10%;
+  height: 50vh;
+  width: 80%;
+  margin: auto;
+  margin-top: 1vh;
   border-style: solid;
   border-radius: 20px;
-  border-width: 10px;
-  border-color: #282c34;
+  border-width: 8px;
+  border-color: #282c34c9;
 }
 
 .weather {
@@ -62,6 +69,14 @@ th {
   width: 400px;
 }
 
+h3 {
+  padding-bottom: 50px;
+}
+
+.copyright
+{
+  padding: 1vh;
+}
 /* On screens that are 992px or less */
 @media screen and (max-width: 992px) {
   th {
@@ -78,6 +93,22 @@ th {
   .weather {
     padding: 2px;
     font-size: 10px;
+  }
+  .App-body, body{
+    font-size: 14px;
+  }
+  .button {
+    margin-top: 30px;
+    padding: 2px;
+    width: 100px;
+    border-color: #282c34;
+    border-width: 4px;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 255, 0.613);
+    font-size: 10px;
+  }
+  h3 {
+    font-size: 16px;
   }
 }
 
