@@ -1,7 +1,6 @@
 body {
   height: 50vh;
   background-color: aliceblue;
-  border-radius: 5px;
 }
 
 .App {
@@ -21,7 +20,7 @@ body {
   margin-top: 70px;
   padding: 5px;
   width: 170px;
-  border-color: #282c34;
+  border-color: #282c34c9;
   border-width: 4px;
   border-radius: 5px;
   background-color: rgba(0, 255, 255, 0.613);
@@ -41,7 +40,6 @@ body {
   justify-content: left;
   font-size: calc(10px + 2vmin);
   color: aqua;
-  border-radius: 5px;
 }
 
 .App-link {
@@ -76,6 +74,7 @@ h3 {
 .copyright
 {
   padding: 1vh;
+  font-size: 12px;
 }
 /* On screens that are 992px or less */
 @media screen and (max-width: 992px) {
@@ -101,7 +100,7 @@ h3 {
     margin-top: 30px;
     padding: 2px;
     width: 100px;
-    border-color: #282c34;
+    border-color: #282c34c9;
     border-width: 4px;
     border-radius: 5px;
     background-color: rgba(0, 255, 255, 0.613);
