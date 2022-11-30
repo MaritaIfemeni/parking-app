@@ -9,8 +9,8 @@ async function getMultiple(page = 1) {
   );
   const data = {
     main: helper.emptyOrRows(rows),
-    status: 200
-}
+    status: 200,
+  };
   const meta = { page };
 
   return { data, meta };

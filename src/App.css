@@ -71,8 +71,7 @@ h3 {
   padding-bottom: 50px;
 }
 
-.copyright
-{
+.copyright {
   padding: 1vh;
   font-size: 12px;
 }
@@ -93,7 +92,8 @@ h3 {
     padding: 2px;
     font-size: 10px;
   }
-  .App-body, body{
+  .App-body,
+  body {
     font-size: 14px;
   }
   .button {
