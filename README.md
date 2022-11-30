@@ -2,8 +2,7 @@
 # parking-app
 My own parking permit app project using react. 
 <br>
-Deployd at Cloudflare.<br>
-Visit: https://parking-app.pages.dev/
+At the moment it is running locally on RaspberryPi4 using Ubuntu 22.04.1 LTS.
 <br>
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 <br><br>
