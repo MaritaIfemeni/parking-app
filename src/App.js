@@ -3,6 +3,7 @@ import Component from "./Component";
 import Body from "./Body";
 import Testiclass from "./Testiclass";
 import NewSpot from "./NewSpot";
+import DataComponent from "./DataComponent";
 
 function App() {
   const fetchData = () => {
@@ -33,6 +34,7 @@ function App() {
           <Body />
         </section>
         <Testiclass />
+        <DataComponent />
         <button onClick={handleClick}>fetch backend</button>
       </div>
     </div>
