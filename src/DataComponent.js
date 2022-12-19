@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const DataComponent = ({props}) => {
+const DataComponent = ({ props }) => {
   const [posts, setPosts] = useState(null);
 
   const getData = () => {
@@ -16,7 +16,14 @@ const DataComponent = ({props}) => {
     <div>
       <h1>Parkin Areas:</h1>
       <ul>
-        {posts ? posts.main.map((p) => <li key={p.ID}>{p.id}{p.parking_area}</li>) : "not lol"}
+        {posts
+          ? posts.main.map((p) => (
+              <li key={p.ID}>
+                {p.id}
+                {p.parking_area}
+              </li>
+            ))
+          : "not lol"}
       </ul>
       test
     </div>
