@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 
-const DataComponent = ({}) => {
-  const [posts, setPosts] = useState([]);
+const DataComponent = ({props}) => {
+  const [posts, setPosts] = useState(null);
 
   const getData = () => {
     return fetch("http://localhost:9999/areas")
       .then((response) => response.json())
-      .then((data) => setPosts(data));
+      .then((data) => setPosts(data.data));
   };
   useEffect(() => {
     getData();
@@ -16,9 +16,7 @@ const DataComponent = ({}) => {
     <div>
       <h1>Parkin Areas:</h1>
       <ul>
-        {posts &&
-          posts.length > 0 &&
-          posts.map((postsObj, index) => <li key={postsObj.id}>{posts.id}</li>)}
+        {posts ? posts.main.map((p) => <li key={p.ID}>{p.id}{p.parking_area}</li>) : "not lol"}
       </ul>
       test
     </div>
