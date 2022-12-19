@@ -1,30 +1,25 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
-import { ListItem } from "semantic-ui-react";
 
-const DataComponent = ({ props }) => {
+const DataComponent = ({}) => {
   const [posts, setPosts] = useState([]);
 
+  const getData = () => {
+    return fetch("http://localhost:9999/areas")
+      .then((response) => response.json())
+      .then((data) => setPosts(data));
+  };
   useEffect(() => {
-    async function getData() {
-      const res = axios
-        .get("http://localhost:9999/areas")
-        .then(function (response) {
-        console.log(response.data)
-        .then((response) => response.json())
-        .then((data) => ({
-        status: data.data.status,
-        body: data.data.main,
-        }))
-          setPosts(res.posts);
-        });
-    }
     getData();
-  }, [posts]);
+  }, []);
 
   return (
     <div>
-      <p>Testidata: {setPosts}</p>
+      <h1>Parkin Areas:</h1>
+      <ul>
+        {posts &&
+          posts.length > 0 &&
+          posts.map((postsObj, index) => <li key={postsObj.id}>{posts.id}</li>)}
+      </ul>
       test
     </div>
   );
