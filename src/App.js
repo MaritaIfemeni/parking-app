@@ -1,28 +1,10 @@
 import "./App.css";
 import Component from "./Component";
-import Body from "./Body";
 import Testiclass from "./Testiclass";
 import NewSpot from "./NewSpot";
 import DataComponent from "./DataComponent";
 
 function App() {
-  const fetchData = () => {
-    fetch("http://localhost:9999/areas")
-      .then((response) => response.json())
-      .then((data) => ({
-        status: data.data.status,
-        body: data.data.main,
-      }))
-      .then((obj) => {
-        console.log(obj);
-        // console.log(obj.body.data[0]);
-      });
-  };
-
-  const handleClick = () => {
-    fetchData();
-  };
-
   return (
     <div className="App">
       <div>
@@ -30,12 +12,10 @@ function App() {
           <Component />
         </header>
         <section className="App-body">
+          <DataComponent />
           <NewSpot />
-          <Body />
         </section>
         <Testiclass />
-        <DataComponent />
-        <button onClick={handleClick}>fetch backend</button>
       </div>
     </div>
   );

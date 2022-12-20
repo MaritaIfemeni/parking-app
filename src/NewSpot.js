@@ -10,16 +10,16 @@ const NewSpot = () => {
 
   return (
     <div>
+      Lisää sähköposti osoite: 
       <input
         type="text"
         id="message"
         name="message"
-        placeholder="Lisää uusi vapaa parkki tästä..."
+        placeholder="example@mail.com"
         onChange={handleChange}
         value={message}
       />
-      <h4>Olet lisäämässä: {message}</h4>
-      <button onClick={handleChange}>Log message</button>
+
     </div>
   );
 };

@@ -7,6 +7,10 @@ body {
   text-align: center;
 }
 
+.areas li {
+  list-style: none;
+}
+
 .App-logo {
   height: 35vmin;
   width: 20vmin;
