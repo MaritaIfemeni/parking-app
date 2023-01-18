@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const DataComponent = ({ props }) => {
+const PersonsComponent = ({ props }) => {
   const [posts, setPosts] = useState(null);
   const [open, setOpen] = useState(false);
 
@@ -9,7 +9,7 @@ const DataComponent = ({ props }) => {
   };
 
   const getData = () => {
-    return fetch("http://localhost:9999/areas")
+    return fetch("http://localhost:9999/persons")
       .then((response) => response.json())
       .then((data) => setPosts(data.data));
   };
@@ -21,11 +21,8 @@ const DataComponent = ({ props }) => {
   return (
     <div>
       <div>
-        <h1>Linkaa Parkki työntekijälle tai vaikka vierailijalle!</h1>
-        <h3>
-          Lähetä pysäkointilupa valitsemalla pysäköintialue <br></br>ja
-          kirjoittamalla vastaanottajan sähköpostiosoite!
-        </h3>
+        <h1>toimiiko</h1>
+    
       </div>
       <div className="dropdown">
 
@@ -34,7 +31,7 @@ const DataComponent = ({ props }) => {
             ? posts.main.map((p) => (
                 <li key={p.ID}>
                   {p.id}
-                  {p.parking_area}
+                  {p.fullname}
                 </li>
               ))
             : "not lol"}
@@ -45,4 +42,4 @@ const DataComponent = ({ props }) => {
   );
 };
 
-export default DataComponent;
+export default PersonsComponent;

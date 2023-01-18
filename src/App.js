@@ -3,6 +3,7 @@ import Component from "./Component";
 import Testiclass from "./Testiclass";
 import NewSpot from "./NewSpot";
 import DataComponent from "./DataComponent";
+import PersonsComponent from "./PersonsComponent";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <section className="App-body">
           <DataComponent />
           <NewSpot />
+          <PersonsComponent />
         </section>
         <Testiclass />
       </div>
