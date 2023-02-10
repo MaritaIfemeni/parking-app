@@ -35,7 +35,7 @@ body {
   font-style: italic;
 }
 .App-header {
-  background-color: #282c34;
+  background-color: #7283a5;
   max-height: 40vh;
   display: flex;
   flex-direction: column;
@@ -73,6 +73,21 @@ th {
 
 h3 {
   padding-bottom: 50px;
+}
+
+.weather__description {
+  display: flex;
+  flex-direction: row;
+}
+.left {
+  width: 80px;
+  text-align: left;
+}
+
+.right {
+  width: 10%;
+  text-align: left;
+  
 }
 
 .copyright {
