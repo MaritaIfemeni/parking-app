@@ -7,6 +7,8 @@ const CardExampleCard = ({ weatherData }) => {
       return "https://img.icons8.com/ios/50/000000/sun--v1.png";
     } else if (weatherData.weather[0].description === "few clouds") {
       return "https://img.icons8.com/ios/50/000000/sun--v1.png";
+     } else if (weatherData.weather[0].description === "fog") {
+        return "https://img.icons8.com/ios/50/000000/clouds.png";
     } else if (weatherData.weather[0].description === "scattered clouds") {
       return "https://img.icons8.com/ios/50/000000/clouds.png";
     } else if (weatherData.weather[0].description === "broken clouds") {
@@ -21,7 +23,8 @@ const CardExampleCard = ({ weatherData }) => {
       return "https://img.icons8.com/ios/50/000000/snow.png";
     } else if (weatherData.weather[0].description === "mist") {
       return "https://img.icons8.com/ios/50/000000/mist.png";
-    }
+    } 
+
   }
   return (
     <div className="weather">
